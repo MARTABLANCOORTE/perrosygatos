@@ -5,6 +5,7 @@ const mysql = require("mysql2/promise");
 const { getConnection } = require("./Models-Controllers/dbConnection");
 const register = require("./Models-Controllers/register"); //pendiente
 const login = require("./Models-Controllers/login"); //pendiente
+const adopciones = require("./Models-Controllers/animalList");
 
 require("dotenv").config();
 
@@ -22,39 +23,11 @@ server.listen(serverPort, () => {
   console.log(`Server listening at http://localhost:${serverPort}`);
 });
 
-// 1. Endpoint para obtener todas las recetas:
-server.get("/api/recetas", async (req, res) => {
-  try {
-    //1. conectar a la base de datos:
-    const conn = await getConnection();
+server.get("/adopciones", adopciones.create);
 
-    //2. Lanzar un SELECT para recuperar todas las recetas de la bbdd:
-    const queryGetRecetas = `
-          SELECT * FROM recetas_db.recetas;
-        `;
+server.post("/registro", register.create);
 
-    //3. Obtenemos resultados:
-    const [results] = await conn.query(queryGetRecetas);
-
-    // 4. Cerramos conexión a la base de datos:
-    conn.close();
-
-    // 5. Devuelvo un json con los resultados:
-    res.json({
-      // número de elementos
-      info: `Listado de Recetas`,
-      "número de Recetas": results.length,
-      // listado
-      results: results,
-    });
-  } catch (error) {
-    res.json({
-      success: false,
-      error:
-        "Ha habido un error en la base de datos. Por favor, vuelve a intentarlo más tarde. Gracias.",
-    });
-  }
-});
+server.post("/login", login.create);
 
 // 2. Endpoint para obtener una receta por su ID:
 server.get("/api/recetas/:id", async (req, res) => {
@@ -260,9 +233,7 @@ server.get("/recetas/:id", async (req, res) => {
   }
 });
 
-server.post("/registro", register.create);
 
-server.post("/login", login.create);
 
 // // SERVIDOR ESTÁTICOS
 // server.use(express.static("./public"));

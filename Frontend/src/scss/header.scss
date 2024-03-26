@@ -1,0 +1,28 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+    width: 100vw;
+
+    &__img{
+        width: 5rem;
+        height: auto;
+        opacity: 0.55;
+    }
+    &__h1{
+        
+    }
+    &__nav{
+        text-transform: none !important;
+        text-decoration: none !important;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

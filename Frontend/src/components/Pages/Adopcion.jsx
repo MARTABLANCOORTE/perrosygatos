@@ -1,4 +1,5 @@
 import "../../scss/App.scss";
+import React from 'react';
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "../Pages/header.jsx";
@@ -20,12 +21,12 @@ function Adopcion() {
               <div >
                 <div className = "filters"> 
                   <Filters
-                    handleFilterProvincia={handleFilterProvincia}
-                    handleFilterSpecie={handleFilterSpecie}
-                    handleFilterGender={handleFilterGender}
-                    FilterbyAge handleFilterAge={handleFilterAge}
-                    handleFilterSize={handleFilterSize}
-                    handleFilterRaza={handleFilterRaza}
+                    // handleFilterProvincia={handleFilterProvincia}
+                    // handleFilterSpecie={handleFilterSpecie}
+                    // handleFilterGender={handleFilterGender}
+                    // FilterbyAge handleFilterAge={handleFilterAge}
+                    // handleFilterSize={handleFilterSize}
+                    // handleFilterRaza={handleFilterRaza}
                   />
                 </div>
                 <div className = "List">
@@ -36,7 +37,6 @@ function Adopcion() {
           />
         </Routes>
       </main>
-      <Footer />
     </div>
   );
 }
