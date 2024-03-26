@@ -1,5 +1,6 @@
 import "../../scss/App.scss";
 import "../../scss/adopción.scss";
+import React from "react";
 import PropTypes from "prop-types";
 
 function FilterByProvincia({ handleFilterProvincia }) {
@@ -10,7 +11,7 @@ function FilterByProvincia({ handleFilterProvincia }) {
   return (
     <div className="col2 mt-1">
       <fieldset className="filters__child">
-        Status:
+        Provincia:
         <label htmlFor="provincia">
           <select
             name="provincia"

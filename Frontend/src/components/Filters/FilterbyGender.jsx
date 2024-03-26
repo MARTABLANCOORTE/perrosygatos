@@ -1,4 +1,5 @@
 import '../../scss/App.scss';
+import React from "react";
 import PropTypes from 'prop-types';
 
 function FilterByGender({ handleFilterGender }) {
@@ -9,7 +10,7 @@ function FilterByGender({ handleFilterGender }) {
   
     return (
         <div className="col2 mt-1" >
-          <label htmlFor="gender">House:
+          <label htmlFor="gender">Genero:
             <select name="gender" id="gender" onInput={handleInpuGender}>
                 <option value="Todos">Todos</option>
                 <option value="Hembra">Hembra</option>

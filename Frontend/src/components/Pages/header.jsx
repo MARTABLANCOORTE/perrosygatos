@@ -11,7 +11,7 @@ function Header() {
         <img className="header__img" src={logo} alt="Logo" />
         <h1 className="header__h1">Perros y Gatos España</h1>
       </div>
-      <div className="header">
+      <div>
         <NavMenu className="header__nav"/>
       </div>
     </header>

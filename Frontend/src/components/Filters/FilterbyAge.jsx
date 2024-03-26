@@ -1,4 +1,5 @@
 import '../../scss/App.scss';
+import React from "react";
 import PropTypes from 'prop-types';
 
 function FilterByAge({ handleFilterAge }) {
@@ -9,7 +10,7 @@ function FilterByAge({ handleFilterAge }) {
   
     return (
         <div className="col2 mt-1" >
-          <label htmlFor="age">House:
+          <label htmlFor="age">Edad:
             <select name="age" id="age" onInput={handleInputAge}>
                 <option value="Todos">Todos</option>
                 <option value="Cachorro">Cachorro</option>

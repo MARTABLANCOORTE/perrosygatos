@@ -7,6 +7,7 @@ exports.create = async (req, res) => {
     try {
       //1. conectar a la base de datos:
       const conn = await getConnection();
+
   
       //2. Lanzar un SELECT para recuperar todas las recetas de la bbdd:
       const queryGetAdopcion = `

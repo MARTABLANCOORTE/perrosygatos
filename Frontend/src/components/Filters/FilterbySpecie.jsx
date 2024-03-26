@@ -1,4 +1,5 @@
 import "../../scss/App.scss";
+import React from "react";
 import PropTypes from "prop-types";
 
 function FilterBySpecie({ handleFilterSpecie }) {
@@ -9,7 +10,7 @@ function FilterBySpecie({ handleFilterSpecie }) {
   return (
     <div className="col2 mt-1">
       <fieldset className="filters__child">
-        Status:
+        Especie:
         <label htmlFor="specie">
           <select
             name="specie"

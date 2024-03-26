@@ -12,6 +12,8 @@ async function getConnection() {
     });
   
     await connection.connect();
+
+    console.log(process.env.MYSQL_HOST);
   
     // console.log(
     //   `Conexión establecida con la base de datos (identificador=${connection.threadId})`

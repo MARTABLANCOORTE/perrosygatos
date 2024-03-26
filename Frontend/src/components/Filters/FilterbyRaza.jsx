@@ -1,4 +1,5 @@
 import "../../scss/App.scss";
+import React from "react";
 import PropTypes from "prop-types";
 
 function FilterByRaza({ handleFilterRaza }) {
@@ -9,7 +10,7 @@ function FilterByRaza({ handleFilterRaza }) {
   return (
     <div className="col2 mt-1">
       <fieldset className="filters__child">
-        Status:
+        Raza:
         <label htmlFor="raza">
           <select
             name="raza"

@@ -6,3 +6,56 @@
 @import './header.scss';
 
 
+.List{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.filters{
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr 1fr 1fr 1fr;
+    margin:1rem;
+    border: none;
+    gap:1rem;
+}
+
+form {
+    margin-left: 11.5rem;
+}
+
+.col2 .mt-1{
+    border: none;
+}
+
+.filters__child{
+    border: none;
+    width: 2rem;
+    justify-self: stretch;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    max-width: none;
+    border-radius: 0.5rem;
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .card__text {
+    padding: 2px 16px;
+  }
+

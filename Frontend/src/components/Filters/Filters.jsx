@@ -1,4 +1,5 @@
 import '../../scss/App.scss';
+import React from "react";
 import PropTypes from 'prop-types';
 import FilterbySize from './FilterBySize';
 import FilterbyAge from './FilterbyAge';
@@ -12,16 +13,17 @@ import bin from '../../images/bin.png';
 function Filters({handleFilterProvincia, handleFilterSpecie, handleFilterGender, handleFilterAge, handleFilterSize, handleFilterRaza, handleResetFilters}) {
     return (
       <form>
-        <fieldset className="filters">Filters:
+        <h2>Filtros:</h2>
+        <fieldset className="filters">
             <FilterbyProvincia handleFilterProvincia={handleFilterProvincia}/>
             <FilterbySpecie handleFilterSpecie={handleFilterSpecie}/>
             <FilterbyGender handleFilterGender={handleFilterGender}/>
             <FilterbyAge handleFilterAge={handleFilterAge}/>
             <FilterbySize handleFilterSize={handleFilterSize}/>
             <FilterbyRaza handleFilterRaza={handleFilterRaza}/>
-            <button className="Button" onClick={handleResetFilters}>Reset
+            {/* <button className="Button" onClick={handleResetFilters}>Reset
               <img className="bin"src={bin} alt="Reset bin" style={{ width: '20px', height: '20px' }} />
-            </button>
+            </button> */}
         </fieldset>
       </form>
     );

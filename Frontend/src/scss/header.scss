@@ -7,6 +7,7 @@
     padding-left: 2rem;
     padding-bottom: 1rem;
     width: 100vw;
+    margin-top: 1rem;
 
     &__img{
         width: 5rem;
@@ -19,6 +20,7 @@
     &__nav{
         text-transform: none !important;
         text-decoration: none !important;
+        
     }
 }
 
@@ -27,11 +29,10 @@
     color: inherit;
     display: flex;
     flex-direction: row;
-    width: 100vw;
     height: auto;
     background-color: whitesmoke;
     justify-content: right;
-    
+    margin-right: 3rem;
 
 
     &__item{

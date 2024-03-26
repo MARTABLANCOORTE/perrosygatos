@@ -1,4 +1,5 @@
 import '../../scss/App.scss';
+import React from "react";
 import PropTypes from 'prop-types';
 
 function FilterBySize({ handleFilterSize }) {
@@ -9,7 +10,7 @@ function FilterBySize({ handleFilterSize }) {
   
     return (
         <div className="col2 mt-1" >
-          <label htmlFor="seize">House:
+          <label htmlFor="seize">Tamaño:
             <select name="seize" id="seize" onInput={handleInpuSize}>
                 <option value="Todos">Todos</option>
                 <option value="Pequeño">Pequeño</option>

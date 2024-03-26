@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import PropTypes  from "prop-types";
 import defaultPhoto from '../../images/audrey.jpg';
 
-function AnimalCard ({ character }) {
+function PetCard ({ character }) {
   return (
     <Link to={"/character/"+ character.name} >
     <div className="details">
