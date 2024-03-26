@@ -4,7 +4,7 @@
     justify-content: flex-start;
     align-content: flex-start;
     align-items: center;
-    padding-left: 3rem;
+    padding-left: 2rem;
     padding-bottom: 1rem;
     width: 100vw;
 
@@ -22,7 +22,25 @@
     }
 }
 
-a {
+.menu{
     text-decoration: none;
     color: inherit;
-}
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+    background-color: whitesmoke;
+    justify-content: right;
+    
+
+
+    &__item{
+        text-decoration: none;
+        color: inherit;
+        display: none;
+        display: inline;
+        padding: 0.3rem 1rem;
+      }
+  }
+
+

@@ -12,7 +12,7 @@ function NavMenu() {
           </NavLink>
         </li>
         <li className="menu__item">
-          <NavLink to="/Adopcion"  className="menu__link">
+          <NavLink to="/Adopcion/*"  className="menu__link">
             Adopción
           </NavLink>
         </li>

@@ -1,4 +1,5 @@
 import "../../scss/App.scss";
+import "../../scss/adopción.scss";
 import PropTypes from "prop-types";
 
 function FilterByProvincia({ handleFilterProvincia }) {

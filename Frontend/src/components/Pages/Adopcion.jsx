@@ -12,7 +12,7 @@ function Adopcion() {
 
   return (
     <div className="page">
-        <Header/>
+      <Header/>
       <main>
         <Routes>
           <Route

@@ -14,7 +14,7 @@ function App() {
   // 5. Html en el return
 
   return (
-    <div className="page">
+    <div>
       <main>
         <Routes>
           <Route
@@ -26,7 +26,7 @@ function App() {
             }
           />
           <Route
-            path="/Adopcion" 
+            path="/Adopcion/*"
             element={
               <>
                 <Adopcion/>

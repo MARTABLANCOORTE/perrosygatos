@@ -6,10 +6,14 @@ import NavMenu from "./NavMenu";
 
 function Header() {
   return (
-    <header className="header">
-      <img className="header__img" src={logo} alt="Logo" />
-      <h1 className="header__h1">Perros y Gatos España</h1>
-      {/* <NavMenu className="header__nav"/> */}
+    <header>
+      <div className="header">
+        <img className="header__img" src={logo} alt="Logo" />
+        <h1 className="header__h1">Perros y Gatos España</h1>
+      </div>
+      <div className="header">
+        <NavMenu className="header__nav"/>
+      </div>
     </header>
   );
 }
