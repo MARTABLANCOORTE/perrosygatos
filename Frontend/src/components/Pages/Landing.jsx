@@ -19,7 +19,6 @@ function Landing() {
       </div>
       <div className="landing__container1">
         <p className="landing__container1__sentence">"Quien salva una vida salva al mundo entero"</p>
-        <p className="landing__container1__author">- Frase recogida en el Talmud -</p>
       </div>
       <div>
         <h2 className="landing__h2">¿Qué quieres hacer?</h2> 
